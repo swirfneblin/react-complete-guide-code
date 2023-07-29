@@ -33,6 +33,7 @@ function App() {
       <ul id="concepts">
         {concepts.map((concept) => (
           <Concept
+            key={concept.title}
             title={concept.title}
             image={concept.image}
             description={concept.description}
